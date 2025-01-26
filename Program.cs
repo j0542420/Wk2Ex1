@@ -23,7 +23,7 @@ namespace Wk2Ex1
             //input the interest rate
             Console.WriteLine("What is the interest rate(input 0.05 for 5%)?");
             //collect the user input for the interest rate
-            rate = Convert.ToInt32(Console.ReadLine());
+            rate = Convert.ToDouble(Console.ReadLine());
 
             //input the time in years to pay of the loan
             Console.WriteLine("What is the period of loan in years?");
