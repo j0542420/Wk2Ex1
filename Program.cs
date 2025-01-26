@@ -14,7 +14,6 @@ namespace Wk2Ex1
             int principal = '0';
             double rate = '0';
             int time = '0';
-            int interest = (int)(principal * rate * time);
             //input principal of the loan
             Console.WriteLine("What is principal amount of the loan in dollars?");
             //collect the user input for the principal of the loan
@@ -23,7 +22,7 @@ namespace Wk2Ex1
             //input the interest rate
             Console.WriteLine("What is the interest rate(input 0.05 for 5%)?");
             //collect the user input for the interest rate
-            rate = Convert.ToInt32(Console.ReadLine());
+            rate = Convert.ToDouble(Console.ReadLine());
 
             //input the time in years to pay of the loan
             Console.WriteLine("What is the period of loan in years?");
@@ -31,6 +30,8 @@ namespace Wk2Ex1
             time = Convert.ToInt32(Console.ReadLine());
 
             //calculate the interest of the loan
+            int interest = (int)(principal * rate * time);
+            //output the result
             Console.WriteLine($"Total interest of loan: {interest} dollars");
             
         }
