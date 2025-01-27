@@ -37,6 +37,9 @@ namespace Wk2Ex1
             interest = principal * rate * time;
             //output the result
             Console.WriteLine($"Total interest of loan: {interest:F2}");
+
+            //pause screen for the user to see the result
+            Console.ReadLine();
             
         }
     }
