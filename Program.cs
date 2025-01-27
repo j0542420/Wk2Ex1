@@ -11,9 +11,13 @@ namespace Wk2Ex1
         static void Main(string[] args)
         {
             //declarations
-            int principal = '0';
-            double rate = '0';
-            int time = '0';
+            double principal = 0;
+            double rate = 0;
+            double time = 0;
+
+            //output variable
+            double interest = 0;
+
             //input principal of the loan
             Console.WriteLine("What is principal amount of the loan in dollars?");
             //collect the user input for the principal of the loan
@@ -30,9 +34,9 @@ namespace Wk2Ex1
             time = Convert.ToInt32(Console.ReadLine());
 
             //calculate the interest of the loan
-            int interest = (int)(principal * rate * time);
+            interest = principal * rate * time;
             //output the result
-            Console.WriteLine($"Total interest of loan: {interest} dollars");
+            Console.WriteLine($"Total interest of loan: {interest:F2}");
             
         }
     }
